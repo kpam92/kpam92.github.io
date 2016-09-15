@@ -8,7 +8,12 @@
         position: absolute;
         height: 6px; width: 6px;
         border-radius: 3px;
-        background: #38A217;
+        /*background: #38A217;*/
+        background: green; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(lightgreen,steelblue, green); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(lightgreen, steelblue, green); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(lightgreen,steelblue, green); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(lightgreen,steelblue, green); /* Standard syntax */
       }
       canvas{
         background-color: black;
