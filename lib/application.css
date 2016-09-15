@@ -1,0 +1,60 @@
+* {
+  font-family: 'Pontano Sans', sans-serif;
+}
+.trail { /* className for the trail elements */
+position: absolute;
+height: 6px; width: 6px;
+border-radius: 3px;
+/*background: #38A217;*/
+background: green; /* For browsers that do not support gradients */
+background: -webkit-linear-gradient(lightgreen,steelblue, green); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(lightgreen, steelblue, green); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(lightgreen,steelblue, green); /* For Firefox 3.6 to 15 */
+background: linear-gradient(lightgreen,steelblue, green); /* Standard syntax */
+}
+ul {
+ width: 149px;
+ height: 41px;
+ position: absolute;
+ top: 12px;
+ left: 12px;
+ background: grey;
+ background: -webkit-linear-gradient(lightgrey, grey);
+ background: -o-linear-gradient(lightgrey, grey);
+ background: -moz-linear-gradient(lightgrey, grey);
+ background: linear-gradient(lightgrey, grey);
+ border-radius: 5px;
+ list-style: none;
+ /*font-size: 19px;
+ margin: 6px;
+ text-align: left;
+ padding-top: 18px;
+ padding-left: 16px;
+ letter-spacing: 2px;*/
+}
+
+ul * {
+ letter-spacing: 2px;
+}
+canvas{
+background-color: black;
+position: absolute;
+}
+#pause {
+width: 1000px;
+height: 700px;
+background: rgba(0,0,0,0.5);
+z-index: 7;
+position: relative;
+display: none;
+}
+#pause div {
+position: absolute;
+color:white;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-size: 85px;
+letter-spacing: 15px;
+
+}
