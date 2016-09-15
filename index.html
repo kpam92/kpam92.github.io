@@ -31,7 +31,6 @@
          background: -moz-linear-gradient(lightgrey, grey);
          background: linear-gradient(lightgrey, grey);
          border-radius: 5px;
-         z-index: 1;
          list-style: none;
          /*font-size: 19px;
          margin: 6px;
@@ -42,10 +41,29 @@
        }
 
        ul * {
-
+         letter-spacing: 2px;
        }
       canvas{
         background-color: black;
+        position: absolute;
+      }
+      #pause {
+        width: 1000px;
+        height: 800px;
+        background: rgba(0,0,0,0.5);
+        z-index: 7;
+        position: relative;
+        display: none;
+      }
+      #pause div {
+        position: absolute;
+        color:white;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 85px;
+        letter-spacing: 15px;
+
       }
     </style>
     <script type="text/javascript" src="./lib/bundle.js"></script>
@@ -56,6 +74,6 @@
   <li id="score"></li>
   <li id="level"></li>
 </ul>
-
+<div id="pause"><div> PAUSED </div></div>
   </body>
 </html>
