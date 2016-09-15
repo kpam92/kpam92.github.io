@@ -3,7 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Serpentine</title>
+    <link href="https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet">
     <style>
+        * {
+          font-family: 'Pontano Sans', sans-serif;
+        }
         .trail { /* className for the trail elements */
         position: absolute;
         height: 6px; width: 6px;
@@ -15,6 +19,31 @@
         background: -moz-linear-gradient(lightgreen,steelblue, green); /* For Firefox 3.6 to 15 */
         background: linear-gradient(lightgreen,steelblue, green); /* Standard syntax */
       }
+       ul {
+         width: 149px;
+         height: 41px;
+         position: fixed;
+         top: 12px;
+         left: 12px;
+         background: grey;
+         background: -webkit-linear-gradient(lightgrey, grey);
+         background: -o-linear-gradient(lightgrey, grey);
+         background: -moz-linear-gradient(lightgrey, grey);
+         background: linear-gradient(lightgrey, grey);
+         border-radius: 5px;
+         z-index: 1;
+         list-style: none;
+         /*font-size: 19px;
+         margin: 6px;
+         text-align: left;
+         padding-top: 18px;
+         padding-left: 16px;
+         letter-spacing: 2px;*/
+       }
+
+       ul * {
+
+       }
       canvas{
         background-color: black;
       }
@@ -23,5 +52,10 @@
   </head>
   <body>
 <canvas id="game-canvas" width="1000" height="800"></canvas>
+<ul>
+  <li id="score"></li>
+  <li id="level"></li>
+</ul>
+
   </body>
 </html>
