@@ -63,10 +63,12 @@ letter-spacing: 15px;
 #start {
 width: 1000px;
 height: 700px;
-background: rgba(0,0,0,0.5);
+background: rgb(0,0,0);
 z-index: 7;
 position: relative;
 display: block;
+padding-top: 7px;
+padding-left: 7px;
 }
 #start div {
 position: absolute;
@@ -76,7 +78,6 @@ left: 50%;
 transform: translate(-50%, -50%);
 font-size: 85px;
 letter-spacing: 15px;
-
 }
 
 h1 {
@@ -110,5 +111,11 @@ h3 {
   border-radius: 5px;
   outline: none;
   margin: 13px 20px 35px 13px;
+  letter-spacing: 4px;
 
+}
+
+#start-button:hover {
+  background: darkgrey;
+  color: white;
 }
