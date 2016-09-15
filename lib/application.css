@@ -1,5 +1,6 @@
-* {
+body {
   font-family: 'Pontano Sans', sans-serif;
+  background: black;
 }
 .trail { /* className for the trail elements */
 position: absolute;
@@ -39,6 +40,7 @@ ul * {
 canvas{
 background-color: black;
 position: absolute;
+border: 3px white solid;
 }
 #pause {
 width: 1000px;
