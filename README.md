@@ -10,5 +10,5 @@
 
 [Production Repo][production]
 
-[production]: [https://github.com/kpam92/kpam92.github.io]
+[production]: https://github.com/kpam92/kpam92.github.io
 Working repo for Serpentine game.
