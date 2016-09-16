@@ -26,17 +26,19 @@ ul {
  background: linear-gradient(lightgrey, grey);
  border-radius: 5px;
  list-style: none;
- /*font-size: 19px;
- margin: 6px;
- text-align: left;
- padding-top: 18px;
- padding-left: 16px;
- letter-spacing: 2px;*/
+
 }
 
 ul * {
  letter-spacing: 2px;
 }
+
+#music-pic {
+  position: absolute;
+  left: 215px;
+  top: 28px;
+}
+
 canvas{
 background-color: black;
 position: absolute;
@@ -163,4 +165,8 @@ letter-spacing: 15px;
 #redo-button:hover {
   background: green;
   color: white;
+}
+
+embed {
+  position: absolute;
 }
