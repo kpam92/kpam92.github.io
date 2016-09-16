@@ -126,7 +126,7 @@ height: 700px;
 background: rgb(0,0,0);
 z-index: 7;
 position: relative;
-display: block;
+display: none;
 padding-top: 7px;
 padding-left: 7px;
 z-index: 2;
