@@ -46,7 +46,7 @@
 
 	const Game = __webpack_require__(1);
 
-	const GameView = __webpack_require__(7);
+	const GameView = __webpack_require__(8);
 
 	document.addEventListener('DOMContentLoaded', function(){
 	  // let g = new GameView();
@@ -70,7 +70,7 @@
 	const Asteroid = __webpack_require__(2);
 	const Ship = __webpack_require__(4);
 	const Dot = __webpack_require__(6)
-	const Sound = __webpack_require__(8)
+	const Sound = __webpack_require__(7)
 
 	function Game(options) {
 	  this.DIM_X = 1000;
@@ -357,10 +357,36 @@
 
 /***/ },
 /* 7 */
+/***/ function(module, exports) {
+
+	
+	function Sound(src) {
+	  this.sound = document.createElement("audio");
+	  this.sound.src = src;
+	  this.sound.setAttribute("preload", "auto");
+	  this.sound.setAttribute("controls", "none");
+	  this.sound.style.display = "none";
+	  document.body.appendChild(this.sound);
+
+	}
+
+
+	Sound.prototype.play = function(){
+	        this.sound.play();
+	    }
+	Sound.prototype.stop = function(){
+	        this.sound.pause();
+	    }
+
+	module.exports = Sound;
+
+
+/***/ },
+/* 8 */
 /***/ function(module, exports, __webpack_require__) {
 
 	const Game = __webpack_require__(1);
-	const Sound = __webpack_require__(8);
+	const Sound = __webpack_require__(7);
 
 	function GameView() {
 	  this.DIM_X = 1000;
@@ -504,32 +530,6 @@
 
 	// window.game_view = GameView
 	module.exports = GameView;
-
-
-/***/ },
-/* 8 */
-/***/ function(module, exports) {
-
-	
-	function Sound(src) {
-	  this.sound = document.createElement("audio");
-	  this.sound.src = src;
-	  this.sound.setAttribute("preload", "auto");
-	  this.sound.setAttribute("controls", "none");
-	  this.sound.style.display = "none";
-	  document.body.appendChild(this.sound);
-
-	}
-
-
-	Sound.prototype.play = function(){
-	        this.sound.play();
-	    }
-	Sound.prototype.stop = function(){
-	        this.sound.pause();
-	    }
-
-	module.exports = Sound;
 
 
 /***/ }
