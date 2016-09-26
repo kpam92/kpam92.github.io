@@ -46,7 +46,7 @@ that.y += (nextDot.y - dot.y) * .6;
 
 ### Future features
 
-There are many added and subtle features that can be added to this game.  Some future updates are:
+There are many added and subtle features that can be added to this game. Future updates include:
 
 - [ ] Power-ups that make the user invincible to asteroids
 - [ ] Varying velocity for asteroid generation to add obstacles of different speed
