@@ -37,7 +37,7 @@ ul * {
   position: absolute;
   left: 215px;
   top: 28px;
-  z-index: 3;
+  z-index: 10;
 }
 
 canvas{
